@@ -1,0 +1,7 @@
+# Model-data fusion
+
+## Exercises
+
+- **Input**: Dataset 1 (half-hourly) read, aggregated to daily values, cleaned and gapfilled
+- **Output**: Linear regression (GPP ~ PAR); optimized modified model (GPP ~ PAR, T, VPD, soil moisture); Bayesian calibration?
+- **Data**: LUE model to FLUXNET GPP

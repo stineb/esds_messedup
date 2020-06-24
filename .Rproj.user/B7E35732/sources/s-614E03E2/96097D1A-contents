@@ -1,3 +1,53 @@
 # Big Data for environmental sciences
 
-Here is a review of existing methods.
+## Exercises
+
+We have time series data obtained from multiple sites. A common task is to complement our data with information about the sites (meta data), or with data from other sources and analyse it using this additional data. In this exercise, you will learn to...
+
+### Overview
+
+- **Input**: From the last session they learned how to look at two flux tower site of dataset 1.  
+- **Output**: They have gotten familiar with the dataset 2, which contains multiple site 
+
+**Content**
+
+- Meta data
+- Combining data: For our set of FLUXNET sites, collect data from other sources (global fields, remote sensing)
+- Finding, accessing, downloading, and reading environmental data from the web, web scraping
+- MODIS, Landsat, Google Earth Engine, Worldclim, Chelsa, CRU, (some re-analysis), CMIP5 from Urs, HWSD, ETOPO1, Biome classification, IGBP veg types, Koeppen-Geiger climate, …...
+- Merging, nesting
+- Formats: geo data: raster, NetCDF, CSV, shapefile
+- bash, cron, wget, grep, system, RegExp
+
+### Read multiple files
+
+Find all daily time series data in the `"./data"` directory. Files are identified here by their name, which contains the pattern `"DD"` (for 'daily').
+```{r}
+filelist <- list.files("./data", pattern = "DD")
+```
+
+This returns 19 files for 19 sites. We can read them in at once using a simple loop. Here, we are creating a list of data frames of length 19.
+```{r message=FALSE}
+library(readr)
+list_df <- list()
+for (ifil in filelist){
+  list_df[[ifil]] <- read_csv(paste0("./data/", ifil))
+}
+```
+
+In *tidyverse*, this could be done on one line by:
+```{r message=FALSE}
+library(purrr)
+list_df <- purrr::map(as.list(filelist), ~read_csv(paste0("./data/", .)))
+
+## This returns a unnamed list. Let's add names as done above.
+names(list_df) <- filelist
+```
+
+It may be unpractical to have the different dataframes as elements of a list. In fact, the data frames read in here each have similar shapes. I.e., they share the same columns (but differ by their number of rows, and of course, by their data values). This suggests that we can "stack" each dataframes along rows.
+```{r}
+library(dplyr)
+df_allsites <- bind_rows(list_df, .id = "siteid")
+```
+
+This creates one single data frame containing all sites' data (>90'000 rows), and adds a column named `"siteid"` that is automatically created by using the names of the list elements of `list_df`.

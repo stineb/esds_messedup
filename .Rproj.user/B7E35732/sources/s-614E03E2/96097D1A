@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "96097D1A",
-    "lastKnownWriteTime" : 1592987266,
-    "last_content_update" : 1592987266,
+    "lastKnownWriteTime" : 1593003297,
+    "last_content_update" : 1593003297623,
     "path" : "~/esds/02-bigdata.Rmd",
     "project_path" : "02-bigdata.Rmd",
     "properties" : {
-        "cursorPosition" : "3,0",
-        "scrollLine" : "0"
+        "cursorPosition" : "34,1",
+        "scrollLine" : "28"
     },
     "read_only" : false,
     "read_only_alternatives" : [

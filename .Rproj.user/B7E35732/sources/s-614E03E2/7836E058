@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "200090856",
+    "hash" : "0",
     "id" : "7836E058",
-    "lastKnownWriteTime" : 1592987316,
-    "last_content_update" : 1592987316,
+    "lastKnownWriteTime" : 1592996380,
+    "last_content_update" : 1592996382416,
     "path" : "~/esds/03-scraping_wrangling.Rmd",
     "project_path" : "03-scraping_wrangling.Rmd",
     "properties" : {
-        "cursorPosition" : "0,29",
-        "scrollLine" : "0"
+        "cursorPosition" : "8,0",
+        "scrollLine" : "9"
     },
     "read_only" : false,
     "read_only_alternatives" : [
