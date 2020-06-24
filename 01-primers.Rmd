@@ -1,0 +1,22 @@
+# Primers
+
+[Embed video here by:]
+
+This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+
+The **bookdown** package can be installed from CRAN or Github:
+
+```{r eval=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+If you want to generate PDF output, you will need to install LaTeX. For R Markdown users who have not installed LaTeX before, we recommend that you install TinyTeX (https://yihui.name/tinytex/):
+
+```{r eval=FALSE}
+install.packages('tinytex')
+tinytex::install_tinytex()  # install TinyTeX
+Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+```
+
