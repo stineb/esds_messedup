@@ -1,8 +1,3 @@
 # Data scraping and wrangling
 
-## Exercises
-
-- **Input**: The students 
-- **Output**: The student will produce a plant functional trait maps for Europe that can be considered later as a predictor. They have c about Biome classification, IGBP veg types
-- **Data**: Dataset 2 in particular the geographic locations for which vegetation types will be produced in combination with plant occurrences (GBIF) and plant trait data (leaf trait - TRY).
-
+We describe our methods in this chapter.

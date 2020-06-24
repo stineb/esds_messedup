@@ -1,54 +1,6 @@
 # Primers
 
-(Youtube videos can be embedded, according to [this](https://bookdown.org/yihui/rmarkdown/learnr-videos.html), but it didn't work for me.)
-
-## Exercises
-
-### Overview 
-
-- **Input**: Reads for the first time the dataset 1 of two (Swiss) FLUXNET sites at high temporal resolution with 3-4 measures. 
-- **Output**: Learned about the data structure and the capacity to explore the content of the dataframe and visualize it so that it can be analysed in the next session.
-- **Data**: Dataset 1 First hands-on with one of two (Swiss) FLUXNET sites at high temporal resolution with 3-4 measureswith high-resolution fluxnet dataset
-
-**Contents**
-
-- Content and operations:
-- Managing the workspace and data
-- Basic operations in R
-- RStudio, debugging
-- Reading a table into a data frame
-- Objects, data frames, lists
-- Applying a function, loop, etc.
-- Simple plotting
-- Making workflow reproducible
-	- RMarkdown
-- Coding
-	- Best practices
-	- Modularity
-- Version control with git (for dummies: GitHub, fork, clone, commit, push, pull, branch)
-
-
-### Reading data into R
-
-Load libraries.
-```{r}
-library(readr)
-library(tidyverse)
-```
-
-Read data from Laegern site.
-```{r}
-df_fluxes <- read_csv("./data/FLX_CH-Lae_FLUXNET2015_FULLSET_HH_2004-2014_1-3.csv", ) 
-```
-
-Plot something.
-```{r}
-ggplot(data = slice(df_fluxes, 1:1000), aes(x = TIMESTAMP_START, NEE_VUT_REF)) +
-  geom_line()
-```
-
-
-## How to use Bookdown and Markdown
+[Embed video here by:]
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 

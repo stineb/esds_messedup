@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592987318938.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2074871326",
+    "id" : "6C12173E",
+    "lastKnownWriteTime" : 1592987380,
+    "last_content_update" : 1592987380,
+    "path" : "~/esds/04-process_modelling.Rmd",
+    "project_path" : "04-process_modelling.Rmd",
+    "properties" : {
+        "cursorPosition" : "7,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -131,24 +131,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="primers.html"><a href="primers.html"><i class="fa fa-check"></i><b>1</b> Primers</a><ul>
-<li class="chapter" data-level="1.1" data-path="primers.html"><a href="primers.html#exercises"><i class="fa fa-check"></i><b>1.1</b> Exercises</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="primers.html"><a href="primers.html#overview"><i class="fa fa-check"></i><b>1.1.1</b> Overview</a></li>
-<li class="chapter" data-level="1.1.2" data-path="primers.html"><a href="primers.html#reading-data-into-r"><i class="fa fa-check"></i><b>1.1.2</b> Reading data into R</a></li>
-</ul></li>
-<li class="chapter" data-level="1.2" data-path="primers.html"><a href="primers.html#how-to-use-bookdown-and-markdown"><i class="fa fa-check"></i><b>1.2</b> How to use Bookdown and Markdown</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="big-data-for-environmental-sciences.html"><a href="big-data-for-environmental-sciences.html"><i class="fa fa-check"></i><b>2</b> Big Data for environmental sciences</a><ul>
-<li class="chapter" data-level="2.1" data-path="big-data-for-environmental-sciences.html"><a href="big-data-for-environmental-sciences.html#exercises-1"><i class="fa fa-check"></i><b>2.1</b> Exercises</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="big-data-for-environmental-sciences.html"><a href="big-data-for-environmental-sciences.html#overview-1"><i class="fa fa-check"></i><b>2.1.1</b> Overview</a></li>
-<li class="chapter" data-level="2.1.2" data-path="big-data-for-environmental-sciences.html"><a href="big-data-for-environmental-sciences.html#read-multiple-files"><i class="fa fa-check"></i><b>2.1.2</b> Read multiple files</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="data-scraping-and-wrangling.html"><a href="data-scraping-and-wrangling.html"><i class="fa fa-check"></i><b>3</b> Data scraping and wrangling</a><ul>
-<li class="chapter" data-level="3.1" data-path="data-scraping-and-wrangling.html"><a href="data-scraping-and-wrangling.html#exercises-2"><i class="fa fa-check"></i><b>3.1</b> Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="model-data-fusion.html"><a href="model-data-fusion.html"><i class="fa fa-check"></i><b>4</b> Model-data fusion</a><ul>
-<li class="chapter" data-level="4.1" data-path="model-data-fusion.html"><a href="model-data-fusion.html#exercises-3"><i class="fa fa-check"></i><b>4.1</b> Exercises</a></li>
+<li class="chapter" data-level="1" data-path="primers.html"><a href="primers.html"><i class="fa fa-check"></i><b>1</b> Primers</a></li>
+<li class="chapter" data-level="2" data-path="big-data-for-environmental-sciences.html"><a href="big-data-for-environmental-sciences.html"><i class="fa fa-check"></i><b>2</b> Big Data for environmental sciences</a></li>
+<li class="chapter" data-level="3" data-path="data-scraping-and-wrangling.html"><a href="data-scraping-and-wrangling.html"><i class="fa fa-check"></i><b>3</b> Data scraping and wrangling</a></li>
+<li class="chapter" data-level="4" data-path="process-modelling-and-model-data-fusion.html"><a href="process-modelling-and-model-data-fusion.html"><i class="fa fa-check"></i><b>4</b> Process modelling and model-data fusion</a><ul>
+<li class="chapter" data-level="4.1" data-path="process-modelling-and-model-data-fusion.html"><a href="process-modelling-and-model-data-fusion.html#example-one"><i class="fa fa-check"></i><b>4.1</b> Example one</a></li>
+<li class="chapter" data-level="4.2" data-path="process-modelling-and-model-data-fusion.html"><a href="process-modelling-and-model-data-fusion.html#example-two"><i class="fa fa-check"></i><b>4.2</b> Example two</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="supervised-learning.html"><a href="supervised-learning.html"><i class="fa fa-check"></i><b>5</b> Supervised learning</a></li>
 <li class="chapter" data-level="6" data-path="unsupervised-learning.html"><a href="unsupervised-learning.html"><i class="fa fa-check"></i><b>6</b> Unsupervised learning</a></li>
@@ -175,50 +163,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="big-data-for-environmental-sciences" class="section level1">
 <h1><span class="header-section-number">Chapter 2</span> Big Data for environmental sciences</h1>
-<div id="exercises-1" class="section level2">
-<h2><span class="header-section-number">2.1</span> Exercises</h2>
-<p>We have time series data obtained from multiple sites. A common task is to complement our data with information about the sites (meta data), or with data from other sources and analyse it using this additional data. In this exercise, you will learn to…</p>
-<div id="overview-1" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Overview</h3>
-<ul>
-<li><strong>Input</strong>: From the last session they learned how to look at two flux tower site of dataset 1.<br />
-</li>
-<li><strong>Output</strong>: They have gotten familiar with the dataset 2, which contains multiple site</li>
-</ul>
-<p><strong>Content</strong></p>
-<ul>
-<li>Meta data</li>
-<li>Combining data: For our set of FLUXNET sites, collect data from other sources (global fields, remote sensing)</li>
-<li>Finding, accessing, downloading, and reading environmental data from the web, web scraping</li>
-<li>MODIS, Landsat, Google Earth Engine, Worldclim, Chelsa, CRU, (some re-analysis), CMIP5 from Urs, HWSD, ETOPO1, Biome classification, IGBP veg types, Koeppen-Geiger climate, ……</li>
-<li>Merging, nesting</li>
-<li>Formats: geo data: raster, NetCDF, CSV, shapefile</li>
-<li>bash, cron, wget, grep, system, RegExp</li>
-</ul>
-</div>
-<div id="read-multiple-files" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Read multiple files</h3>
-<p>Find all daily time series data in the <code>&quot;./data&quot;</code> directory. Files are identified here by their name, which contains the pattern <code>&quot;DD&quot;</code> (for ‘daily’).</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">filelist &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="st">&quot;./data&quot;</span>, <span class="dt">pattern =</span> <span class="st">&quot;DD&quot;</span>)</a></code></pre></div>
-<p>This returns 19 files for 19 sites. We can read them in at once using a simple loop. Here, we are creating a list of data frames of length 19.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="kw">library</span>(readr)</a>
-<a class="sourceLine" id="cb12-2" data-line-number="2">list_df &lt;-<span class="st"> </span><span class="kw">list</span>()</a>
-<a class="sourceLine" id="cb12-3" data-line-number="3"><span class="cf">for</span> (ifil <span class="cf">in</span> filelist){</a>
-<a class="sourceLine" id="cb12-4" data-line-number="4">  list_df[[ifil]] &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="kw">paste0</span>(<span class="st">&quot;./data/&quot;</span>, ifil))</a>
-<a class="sourceLine" id="cb12-5" data-line-number="5">}</a></code></pre></div>
-<p>In <em>tidyverse</em>, this could be done on one line by:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw">library</span>(purrr)</a>
-<a class="sourceLine" id="cb13-2" data-line-number="2">list_df &lt;-<span class="st"> </span>purrr<span class="op">::</span><span class="kw">map</span>(<span class="kw">as.list</span>(filelist), <span class="op">~</span><span class="kw">read_csv</span>(<span class="kw">paste0</span>(<span class="st">&quot;./data/&quot;</span>, .)))</a>
-<a class="sourceLine" id="cb13-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb13-4" data-line-number="4"><span class="co">## This returns a unnamed list. Let&#39;s add names as done above.</span></a>
-<a class="sourceLine" id="cb13-5" data-line-number="5"><span class="kw">names</span>(list_df) &lt;-<span class="st"> </span>filelist</a></code></pre></div>
-<p>It may be unpractical to have the different dataframes as elements of a list. In fact, the data frames read in here each have similar shapes. I.e., they share the same columns (but differ by their number of rows, and of course, by their data values). This suggests that we can “stack” each dataframes along rows.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb14-2" data-line-number="2">df_allsites &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(list_df, <span class="dt">.id =</span> <span class="st">&quot;siteid&quot;</span>)</a></code></pre></div>
-<p>This creates one single data frame containing all sites’ data (&gt;90’000 rows), and adds a column named <code>&quot;siteid&quot;</code> that is automatically created by using the names of the list elements of <code>list_df</code>.</p>
+<p>Here is a review of existing methods.</p>
 
-</div>
-</div>
 </div>
             </section>
 
