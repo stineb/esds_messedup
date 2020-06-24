@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "1940155285",
     "id" : "1947C23D",
-    "lastKnownWriteTime" : 1592988047,
-    "last_content_update" : 1592988047341,
+    "lastKnownWriteTime" : 1592987206,
+    "last_content_update" : 1592987206,
     "path" : "~/esds/01-primers.Rmd",
     "project_path" : "01-primers.Rmd",
     "properties" : {
-        "cursorPosition" : "7,7",
+        "cursorPosition" : "6,12",
         "scrollLine" : "0"
     },
     "read_only" : false,
